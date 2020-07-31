@@ -9,25 +9,33 @@
     "UiPath.System.Activities": "[19.3.0]",
     "UiPath.UIAutomation.Activities": "[19.3.0]"
   },
-  "schemaVersion": "3.2",
-  "studioVersion": "19.4.0.0",
-  "projectVersion": "1.0.6",
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.4.3.0",
+  "projectVersion": "1.0.9",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
     "excludedLoggedData": [
       "Private:*",
       "*password*"
-    ]
+    ],
+    "executionType": "Workflow"
   },
-  "projectType": "Workflow",
-  "libraryOptions": {
-    "includeOriginalXaml": false,
-    "privateWorkflows": []
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": []
   },
   "arguments": {
     "input": [],
     "output": []
   },
-  "webServices": []
+  "expressionLanguage": "VisualBasic"
 }
