@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1134,1804</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1164,1685</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -58,7 +58,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: Take contact no one by one and send message to selected number. Update status to respective contact no.&#xA;&#xA;PreCondition: Opened Whats App Web URL. Message to be send to respective Contact No.&#xA;PostCondition: Updated status to respective Contact No." DisplayName="SendMessageProcess" sap:VirtualizedContainerService.HintSize="1094,1684" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Description: Take contact no one by one and send message to selected number. Update status to respective contact no.&#xA;&#xA;PreCondition: Opened Whats App Web URL. Message to be send to respective Contact No.&#xA;PostCondition: Updated status to respective Contact No." DisplayName="SendMessageProcess" sap:VirtualizedContainerService.HintSize="1174,1620" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="[in_Config(&quot;webWhatsappURL&quot;).ToString]" Name="URL_Whatsapp" />
       <Variable x:TypeArguments="x:String" Default="[in_Config(&quot;messageToSendMarathi&quot;).ToString]" Name="messageToSendMarathi" />
@@ -75,13 +75,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'WhatsApp'" sap:VirtualizedContainerService.HintSize="1072,1488" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="e779f546104090c78d74d7cc49b4509d" Selector="&lt;html app='chrome.exe' title='*WhatsApp' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'WhatsApp'" sap:VirtualizedContainerService.HintSize="1132,1456" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="b6ba96d11a2d6aa60a319014b691b6ca" Selector="&lt;html app='chrome.exe' title='*WhatsApp' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1058,1342" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1098,1310" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Default="C:\Users\Manashree\Downloads\SwamiVivek_Quote.png" Name="strAttachementFilePath" />
               <Variable x:TypeArguments="ui:GenericValue" Name="strContactNoSearch" />
@@ -94,7 +94,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="1036,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign sap:VirtualizedContainerService.HintSize="1056,60" sap2010:WorkflowViewState.IdRef="Assign_7">
               <Assign.To>
                 <OutArgument x:TypeArguments="ui:GenericValue">[strContactNoSearch]</OutArgument>
               </Assign.To>
@@ -102,17 +102,17 @@
                 <InArgument x:TypeArguments="ui:GenericValue">[in_TransactionItem("MobileNo").ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="1036,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="False" Text="[strContactNoSearch + &quot;[k(enter)]&quot;]">
+            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="1056,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="False" Text="[strContactNoSearch + &quot;[k(enter)]&quot;]">
               <ui:TypeInto.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="277d530adbf5b8609a8cf028d8c97a43" Selector="&lt;html app='chrome.exe' title='*WhatsApp' /&gt;&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="f7539b23331c91c344eb1ca865650185" Selector="&lt;webctrl isleaf='1' parentid='side' tag='DIV' class='_3FRCZ copyable-text selectable-text' /&gt;" WaitForReady="COMPLETE" />
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:UiElementExists DisplayName="Element Exists 'INPUT'" Exists="[notAvailableContact]" sap:VirtualizedContainerService.HintSize="1036,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+            <ui:UiElementExists DisplayName="Element Exists 'INPUT'" Exists="[notAvailableContact]" sap:VirtualizedContainerService.HintSize="1056,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8411e8c3ce512ac3544eff6ffa264eee" Selector="&lt;webctrl parentid='pane-side' tag='DIV' innertext='No chats, contacts or messages found' idx='1' /&gt;" TimeoutMS="3000" WaitForReady="COMPLETE" />
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[notAvailableContact]" sap:VirtualizedContainerService.HintSize="1036,798" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[notAvailableContact]" sap:VirtualizedContainerService.HintSize="1056,798" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="336,330" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <sap:WorkflowViewStateService.ViewState>
